@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Employee Information Update Form</h1>
+<form method="post">
+    {%csrf_token%}
+    Employee Number:<input type="text" name="eno" value="{{employee.eno}}"><br>
+    Employee Name:<input type="text" name="ename" value="{{employee.ename}}"><br>
+    Employee Salary:<input type="text" name="esal" value="{{employee.esal}}"><br>
+    Employee Address:<input type="text" name="eaddr" value="{{employee.eaddr}}"><br>
+    <input type="submit" name="" value="Update Record">
+
+</form>
+</body>
+</html>
